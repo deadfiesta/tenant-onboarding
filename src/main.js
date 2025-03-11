@@ -105,6 +105,22 @@ const landing = `
       </div>
     </div>
 `
+function preloadImages(imageUrls, callback) {
+    let loaded = 0;
+    const total = imageUrls.length;
+
+    imageUrls.forEach(url => {
+        const img = new Image();
+        img.src = url;
+        img.onload = () => {
+            loaded++;
+            if (loaded === total) {
+                callback();
+            }
+        };
+    });
+}
+
 function trackAnimations(selector, total, callback) {
     let completedAnimations = 0;
 
@@ -130,8 +146,19 @@ function logoReveal() {
         document.documentElement.style.setProperty("--total-length", line.getTotalLength());
     }
 
-    // Track animations on the logo andtransition to landing
-    trackAnimations("#ascenda-logo", 9, landingReveal);
+    // Preload assets before transitioning
+    const imageList = [
+        "/custom-brand-assets.png",
+        "/redemption-analytics.png",
+        "/krisflyer.svg",
+        "/velocity.svg"
+    ];
+
+    preloadImages(imageList, () => {
+        console.log("All images preloaded!");
+        // Track animations on the logo andtransition to landing
+        trackAnimations("#ascenda-logo", 9, landingReveal);
+    });
 }
 
 function landingReveal() {
