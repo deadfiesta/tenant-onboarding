@@ -54,43 +54,31 @@ body {
 }
 
 #custom-brand {
-  top: 30%;
-  left: 2.5%;
   animation: fade, custombrand;
   animation-duration: 835ms;
 }
 
 #redemption-analytics {
-  bottom: -5%;
-  left: 5%;
   animation: fade, righttoleft;
   animation-duration: 1000ms;
 }
 
 #points-cash {
-  top: 2.5%;
-  left: 25%;
   animation: fade, toptobottom;
   animation-duration: 835ms;
 }
 
 #virgin-australia {
-  right: -1.5%;
-  top: 15%;
   animation: fade, lefttoright;
   animation-duration: 1000ms;
 }
 
 #singapore-airlines {
-  right: -4.5%;
-  top: 25%;
   animation: fade, sq;
   animation-duration: 835ms;
 }
 
 #eligible-users {
-  bottom: 10%;
-  right: -1.5%;
   animation: fade, lefttoright;
   animation-duration: 835ms;
 }

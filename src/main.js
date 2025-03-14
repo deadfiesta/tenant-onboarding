@@ -40,12 +40,12 @@ const logo = `
 `
 const landing = `
 <!--Main welcome tile-->
-    <div id="welcome" class="max-w-[540px] flex flex-col items-center gap-6.25">
-      <h1 class="text-4xl font-bold">Welcome [f_name]</h1>
-      <p>Lorem ipsum dolor sit amet consectetur. Facilisis nisl cursus vitae ridiculus quis facilisi mauris. Tristique
+    <div id="welcome" class="max-w-[540px] m-4 flex flex-col items-center gap-6.25">
+      <h1 class="text-2xl md:text-4xl font-bold">Welcome [f_name]</h1>
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur. Facilisis nisl cursus vitae ridiculus quis facilisi mauris. Tristique
         scelerisque arcu facilisi at augue facilisis amet mattis donec. Sapien semper eu tristique tellus facilisis. Sit
         ut fermentum faucibus ac facilisi id egestas ultrices.</p>
-      <button onClick="logoReveal" class="py-3 px-6 bg-cloudburst-500 text-white font-bold rounded flex justify-between w-[200px] cursor-pointer hover:bg-cloudburst-400 active:bg-cloudburst-700 focus-visible:outline-shakesphere-300 focus-within:outline-2">
+      <button onClick="logoReveal" class="py-3 px-6 bg-cloudburst-500 text-sm md:text-base text-white font-bold rounded flex justify-between w-[200px] cursor-pointer hover:bg-cloudburst-400 active:bg-cloudburst-700 focus-visible:outline-shakesphere-300 focus-within:outline-2">
         Get started
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98145 13.1763H19.4814V11.1763H4.98145V13.1763Z" />
@@ -55,17 +55,17 @@ const landing = `
       </button>
     </div>
     <!--Custom brand tile-->
-    <div id="custom-brand" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10">
+    <div id="custom-brand" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10 max-[1024px]:hidden top-[30%] left-[2.5%]">
       <h5 class="font-bold">Custom brand assets</h5>
       <img width="180" src="/custom-brand-assets.png" alt="">
     </div>
     <!--Redemption analytics tile-->
-    <div id="redemption-analytics" data-speed="24" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10">
+    <div id="redemption-analytics" data-speed="24" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10 bottom-[-5%] left-[5%]">
       <h5 class="font-bold">Redemption analytics</h5>
       <img width="140" src="/redemption-analytics.png" alt="">
     </div>
      <!--Points to cash tile-->
-     <div id="points-cash" data-speed="20" class= "tile absolute pointer-events-none max-w-[310px] rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10">
+     <div id="points-cash" data-speed="20" class= "tile absolute pointer-events-none max-w-[310px] rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10 top-[-5%] left-[15%] md:top-[2.5%] md:left-[25%]">
       <h5 class="font-bold">Points to cash</h5>
       <p class="text-sm">Determine increment percentage and maximum cash percentage allowed.</p>
       <div id="slider" class="flex items-center gap-2.5 w-full ">
@@ -76,7 +76,7 @@ const landing = `
       </div>
     </div>
     <!--Virgin Australia tile-->
-    <div id="virgin-australia" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex gap-4 items-center shadow-ascenda shadow-cloudburst-500/10 min-w-[360px]">
+    <div id="virgin-australia" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex gap-4 items-center shadow-ascenda shadow-cloudburst-500/10 min-w-[360px] max-[882px]:hidden right-[-1.5%] top-[12.5%]">
       <img src="/velocity.svg" alt="">
       <div class="flex flex-col">
         <h5 class="font-bold">Virgin Australia</h5>
@@ -84,7 +84,7 @@ const landing = `
       </div>
     </div>
     <!--Singapore Airlines tile-->
-    <div id="singapore-airlines" data-speed="24" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex gap-4 items-center shadow-ascenda shadow-cloudburst-500/10 min-w-[360px]">
+    <div id="singapore-airlines" data-speed="24" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex gap-4 items-center shadow-ascenda shadow-cloudburst-500/10 min-w-[360px] right-[-4.5%] top-[15%] md:top-[25%]">
       <img src="/krisflyer.svg" alt="">
       <div class="flex flex-col">
         <h5 class="font-bold">Singapore Airlines</h5>
@@ -92,7 +92,7 @@ const landing = `
       </div>
     </div>
     <!--Eligible users tile-->
-    <div id="eligible-users" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-4 shadow-ascenda shadow-cloudburst-500/10 min-w-[360px]">
+    <div id="eligible-users" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-4 shadow-ascenda shadow-cloudburst-500/10 min-w-[360px] max-[596px]:hidden bottom-[10%] right-[-1.5%]">
       <h5 class="font-bold">581,900 Eligible users</h5>
       <div class="grid use grid-cols-[auto_auto_auto] gap-3">
         <span class="bg-cloudburst-200 text-sm px-1.5 py-0.5 rounded-sm w-fit h-fit">Product type</span>
@@ -155,7 +155,6 @@ function logoReveal() {
     ];
 
     preloadImages(imageList, () => {
-        console.log("All images preloaded!");
         // Track animations on the logo andtransition to landing
         trackAnimations("#ascenda-logo", 9, landingReveal);
     });
@@ -180,7 +179,7 @@ function enableParallax() {
         const centerY = window.innerHeight / 2;
 
         tiles.forEach(tile => {
-            const speed = tile.dataset.speed || 10;
+            const speed = tile.dataset.speed * 5 || 10;
             const offsetX = -(mouseX - centerX) / speed;
             const offsetY = -(mouseY - centerY) / speed;
             tile.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
