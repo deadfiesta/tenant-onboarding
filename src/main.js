@@ -179,7 +179,7 @@ function enableParallax() {
         const centerY = window.innerHeight / 2;
 
         tiles.forEach(tile => {
-            const speed = tile.dataset.speed * 5 || 10;
+            const speed = tile.dataset.speed * 2 || 10;
             const offsetX = -(mouseX - centerX) / speed;
             const offsetY = -(mouseY - centerY) / speed;
             tile.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
