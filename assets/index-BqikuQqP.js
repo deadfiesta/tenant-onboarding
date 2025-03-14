@@ -35,14 +35,14 @@
           d="M28.2505 36.6597C27.0942 38.5904 25.3875 40.1328 23.3487 41.0895C20.9562 42.2683 18.3162 42.8588 15.6488 42.8116C13.9238 42.8032 12.2058 42.5924 10.5301 42.1834C8.78082 41.7736 7.11774 41.0586 5.61734 40.0714C4.10532 39.0699 2.83484 37.7455 1.89758 36.194C0.854827 34.386 0.340117 32.3223 0.411864 30.237C0.274657 27.572 1.20309 24.9617 2.99292 22.9804C4.85226 21.0983 7.12985 19.6808 9.64078 18.843C12.556 17.8459 15.5826 17.2094 18.6528 16.9476C21.9063 16.6444 25.1597 16.4819 28.3373 16.4819V15.4746C28.4138 14.3812 28.2004 13.2869 27.7187 12.302C27.2371 11.3171 26.5041 10.4763 25.5935 9.86427C23.6531 8.62712 21.3882 7.99378 19.0866 8.04469C16.9523 8.04362 14.8431 8.50556 12.9051 9.39854C11.0882 10.1774 9.42752 11.2782 8.00323 12.6478L2.75433 6.48505C5.04758 4.36723 7.75375 2.74487 10.7036 1.7195C13.6505 0.66233 16.7578 0.120083 19.8892 0.116535C22.9364 0.0125749 25.973 0.528461 28.8145 1.63285C30.8607 2.43481 32.6874 3.70993 34.1447 5.35355C35.6019 6.99718 36.6481 8.96247 37.1975 11.0882C37.7251 13.0707 37.9948 15.1129 38 17.1642V41.8043H28.5216V36.6597H28.2505ZM29.5953 23.3161H27.307C25.6694 23.3161 23.9559 23.392 22.1448 23.5328C20.4514 23.6492 18.7774 23.9618 17.1562 24.4642C15.7601 24.8675 14.4636 25.5573 13.3497 26.4896C12.8399 26.9327 12.4375 27.4856 12.1726 28.1066C11.9077 28.7275 11.7874 29.4004 11.8206 30.0746C11.795 30.9197 12.0133 31.7544 12.4496 32.479C12.8714 33.1226 13.4401 33.6572 14.1089 34.0387C14.817 34.4419 15.5862 34.7273 16.3862 34.8835C17.2223 35.0468 18.072 35.1302 18.9239 35.1326C22.4268 35.1326 25.0838 34.2119 26.8841 32.349C27.8154 31.3271 28.5345 30.1308 28.9999 28.8294C29.4652 27.5281 29.6676 26.1475 29.5953 24.7675V23.3161Z" />
       </svg>
     </div>
-`,g=`
+`,h=`
 <!--Main welcome tile-->
-    <div id="welcome" class="max-w-[540px] flex flex-col items-center gap-6.25">
-      <h1 class="text-4xl font-bold">Welcome [f_name]</h1>
-      <p>Lorem ipsum dolor sit amet consectetur. Facilisis nisl cursus vitae ridiculus quis facilisi mauris. Tristique
+    <div id="welcome" class="max-w-[540px] m-4 flex flex-col items-center gap-6.25">
+      <h1 class="text-2xl md:text-4xl font-bold">Welcome [f_name]</h1>
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur. Facilisis nisl cursus vitae ridiculus quis facilisi mauris. Tristique
         scelerisque arcu facilisi at augue facilisis amet mattis donec. Sapien semper eu tristique tellus facilisis. Sit
         ut fermentum faucibus ac facilisi id egestas ultrices.</p>
-      <button onClick="logoReveal" class="py-3 px-6 bg-cloudburst-500 text-white font-bold rounded flex justify-between w-[200px] cursor-pointer hover:bg-cloudburst-400 active:bg-cloudburst-700 focus-visible:outline-shakesphere-300 focus-within:outline-2">
+      <button onClick="logoReveal" class="py-3 px-6 bg-cloudburst-500 text-sm md:text-base text-white font-bold rounded flex justify-between w-[200px] cursor-pointer hover:bg-cloudburst-400 active:bg-cloudburst-700 focus-visible:outline-shakesphere-300 focus-within:outline-2">
         Get started
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98145 13.1763H19.4814V11.1763H4.98145V13.1763Z" />
@@ -52,17 +52,17 @@
       </button>
     </div>
     <!--Custom brand tile-->
-    <div id="custom-brand" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10">
+    <div id="custom-brand" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10 max-[1024px]:hidden top-[30%] left-[2.5%]">
       <h5 class="font-bold">Custom brand assets</h5>
       <img width="180" src="/custom-brand-assets.png" alt="">
     </div>
     <!--Redemption analytics tile-->
-    <div id="redemption-analytics" data-speed="24" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10">
+    <div id="redemption-analytics" data-speed="24" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10 bottom-[-5%] left-[5%]">
       <h5 class="font-bold">Redemption analytics</h5>
       <img width="140" src="/redemption-analytics.png" alt="">
     </div>
      <!--Points to cash tile-->
-     <div id="points-cash" data-speed="20" class= "tile absolute pointer-events-none max-w-[310px] rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10">
+     <div id="points-cash" data-speed="20" class= "tile absolute pointer-events-none max-w-[310px] rounded-2xl bg-white p-4.25 flex flex-col gap-3 items-center shadow-ascenda shadow-cloudburst-500/10 top-[-5%] left-[15%] md:top-[2.5%] md:left-[25%]">
       <h5 class="font-bold">Points to cash</h5>
       <p class="text-sm">Determine increment percentage and maximum cash percentage allowed.</p>
       <div id="slider" class="flex items-center gap-2.5 w-full ">
@@ -73,7 +73,7 @@
       </div>
     </div>
     <!--Virgin Australia tile-->
-    <div id="virgin-australia" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex gap-4 items-center shadow-ascenda shadow-cloudburst-500/10 min-w-[360px]">
+    <div id="virgin-australia" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex gap-4 items-center shadow-ascenda shadow-cloudburst-500/10 min-w-[360px] max-[882px]:hidden right-[-1.5%] top-[12.5%]">
       <img src="/velocity.svg" alt="">
       <div class="flex flex-col">
         <h5 class="font-bold">Virgin Australia</h5>
@@ -81,7 +81,7 @@
       </div>
     </div>
     <!--Singapore Airlines tile-->
-    <div id="singapore-airlines" data-speed="24" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex gap-4 items-center shadow-ascenda shadow-cloudburst-500/10 min-w-[360px]">
+    <div id="singapore-airlines" data-speed="24" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex gap-4 items-center shadow-ascenda shadow-cloudburst-500/10 min-w-[360px] right-[-4.5%] top-[15%] md:top-[25%]">
       <img src="/krisflyer.svg" alt="">
       <div class="flex flex-col">
         <h5 class="font-bold">Singapore Airlines</h5>
@@ -89,7 +89,7 @@
       </div>
     </div>
     <!--Eligible users tile-->
-    <div id="eligible-users" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-4 shadow-ascenda shadow-cloudburst-500/10 min-w-[360px]">
+    <div id="eligible-users" data-speed="36" class="tile absolute pointer-events-none rounded-2xl bg-white p-4.25 flex flex-col gap-4 shadow-ascenda shadow-cloudburst-500/10 min-w-[360px] max-[596px]:hidden bottom-[10%] right-[-1.5%]">
       <h5 class="font-bold">581,900 Eligible users</h5>
       <div class="grid use grid-cols-[auto_auto_auto] gap-3">
         <span class="bg-cloudburst-200 text-sm px-1.5 py-0.5 rounded-sm w-fit h-fit">Product type</span>
@@ -101,4 +101,4 @@
         <span class="text-cloudburst-400 text-sm">25</span>
       </div>
     </div>
-`;function f(s,o){let l=0;const i=s.length;s.forEach(e=>{const t=new Image;t.src=e,t.onload=()=>{l++,l===i&&o()}})}function h(s,o,l){let i=0;document.querySelectorAll(s).forEach(e=>{e.addEventListener("animationend",()=>{i++,i===o&&l()})})}document.addEventListener("DOMContentLoaded",()=>{c()});function c(){d.innerHTML=p;const s=document.getElementById("line");s&&document.documentElement.style.setProperty("--total-length",s.getTotalLength()),f(["/custom-brand-assets.png","/redemption-analytics.png","/krisflyer.svg","/velocity.svg"],()=>{console.log("All images preloaded!"),h("#ascenda-logo",9,m)})}function m(){d.innerHTML=g,v();const s=document.querySelector("button");s&&s.addEventListener("click",c)}function v(){const s=document.querySelectorAll(".absolute");function o(l){const{clientX:i,clientY:e}=l,t=window.innerWidth/2,n=window.innerHeight/2;s.forEach(a=>{const r=a.dataset.speed||10,u=-(i-t)/r,C=-(e-n)/r;a.style.transform=`translate(${u}px, ${C}px)`})}document.removeEventListener("mousemove",o),document.addEventListener("mousemove",o)}
+`;function f(s,o){let l=0;const i=s.length;s.forEach(e=>{const t=new Image;t.src=e,t.onload=()=>{l++,l===i&&o()}})}function g(s,o,l){let i=0;document.querySelectorAll(s).forEach(e=>{e.addEventListener("animationend",()=>{i++,i===o&&l()})})}document.addEventListener("DOMContentLoaded",()=>{c()});function c(){d.innerHTML=p;const s=document.getElementById("line");s&&document.documentElement.style.setProperty("--total-length",s.getTotalLength()),f(["/custom-brand-assets.png","/redemption-analytics.png","/krisflyer.svg","/velocity.svg"],()=>{g("#ascenda-logo",9,m)})}function m(){d.innerHTML=h,v();const s=document.querySelector("button");s&&s.addEventListener("click",c)}function v(){const s=document.querySelectorAll(".absolute");function o(l){const{clientX:i,clientY:e}=l,t=window.innerWidth/2,n=window.innerHeight/2;s.forEach(a=>{const r=a.dataset.speed*2||10,u=-(i-t)/r,C=-(e-n)/r;a.style.transform=`translate(${u}px, ${C}px)`})}document.removeEventListener("mousemove",o),document.addEventListener("mousemove",o)}
